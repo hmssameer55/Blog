@@ -9,8 +9,10 @@
    <h3 class="post-title">     <%=    post.title                          %>    </h3>
    <h5><u>                     <%=    post.author                         %> </u>   </h5>
    <h4>                        <%=    post.message.substring(0,100)+"..." %> + <a href="/posts/<%=post._id %>">read more</a>    </h4>
+   <hr>
          <%  })                          %> 
-
+            
+      
 
 <%- include partials/footer.ejs %>
  

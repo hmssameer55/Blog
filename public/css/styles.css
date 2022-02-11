@@ -80,5 +80,17 @@ h3{
         font-weight:600;
     }
 
+   .post-h1{
+       font-size: larger;
+   }
+
+   .post-h5{
+
+   }
+
+   .post-h4{
+    font-size: medium;
+   }
+
 
   }

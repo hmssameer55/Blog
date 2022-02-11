@@ -79,16 +79,14 @@ app.post('/compose', async (req, res) => {
     author: req.body.composedName,
     message: req.body.composedText
   }
-  
+
   try{
    await blogModel.create(post)
     return res.redirect('/')
   } catch(err){
     console.log(err)
   }
- 
-
-  
+   
 })
 
 app.listen(process.env.PORT || 3000,  ()=> {

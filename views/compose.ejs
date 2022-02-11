@@ -1,0 +1,24 @@
+<%- include partials/header.ejs %>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<h2>Compose</h2>
+
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" name="composedTitle" class="form-control">
+
+        <label>Your Name</label>
+        <input type="text" name="composedName" class="form-control">
+
+        <label> Message </label> 
+        <textarea name="composedText" class="form-control" id="" cols="50" rows="5"></textarea>  
+        
+       
+    </div>
+
+    <button class="btn btn-primary">Submit</button>
+</form>
+
+<%- include partials/footer.ejs %>

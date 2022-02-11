@@ -1,0 +1,13 @@
+<%- include partials/header.ejs %>
+
+<h1><%= title %></h1>
+
+<h5><%= author %></h5>
+
+<h4> <%= content %> </h4>
+
+<form action="/delete" method="post">
+    <button style="margin-top: 10px;" class="btn btn-danger" type="submit" name="dlt" value="<%=id %>">Delete</button>
+</form>
+
+<%- include partials/footer.ejs %>

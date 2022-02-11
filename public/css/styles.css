@@ -82,11 +82,10 @@ h3{
 
    .post-h1{
        font-size: larger;
+       font-weight: bolder;
    }
 
-   .post-h5{
-
-   }
+   
 
    .post-h4{
     font-size: medium;

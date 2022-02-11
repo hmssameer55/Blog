@@ -14,7 +14,6 @@
 }
 
 
-
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
@@ -51,7 +50,7 @@ h2{
 }
 
 h3{
-   line-height: 1.4;
+   line-height: 1.2;
 }
 
 @media only screen and (max-width: 600px) {
@@ -67,4 +66,17 @@ h3{
     .top-nav a{
         float: left;
     }
+
+    .home,.des,h3{
+        font-size: medium;
+    }
+
+    .post-title{
+        font-weight:600;
+    }
+
+    h4{
+        font-weight: lighter;
+    }
+
   }

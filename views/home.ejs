@@ -4,13 +4,13 @@
 <h3 class="des"> Iam Hms Sameer a full stack developer and this is my first blog website you are free to write anything you wish through the <u>compose</u> section from the navbar.</h3> 
 
 
-         <% posts.forEach((post)=>{       %>
+   <% posts.forEach((post)=>{   %>
     
    <h3 class="post-title">     <%=    post.title                          %>    </h3>
    <h5><u>                     <%=    post.author                         %> </u>   </h5>
    <h4>                        <%=    post.message.substring(0,100)+"..." %> + <a href="/posts/<%=post._id %>">read more</a>    </h4>
    <hr>
-         <%  })                          %> 
+   <%  })                       %> 
             
       
 

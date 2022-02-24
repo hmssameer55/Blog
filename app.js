@@ -6,13 +6,14 @@ const _ = require('lodash');
 const makeDbConnection = require("./utils/db");
 const blogModel = require("./models/blog.schema");
 
-
 const app = express();          
        
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
   
+
+
        
 app.get("/", async (req, res) => { 
   try{
@@ -32,13 +33,13 @@ app.get("/posts/:id",async(req,res)=>{
   const id= req.params.id
  
    try{
-      const singlePost = await blogModel.findById({_id:id})
-      if(singlePost){
+      const foundedPost = await blogModel.findById({_id:id})
+      if(foundedPost){
         res.render("post",{
-                title:singlePost.title,
-                author:singlePost.author,
-                content:singlePost.message,
-                id:singlePost._id
+                title:foundedPost.title,
+                author:foundedPost.author,
+                content:foundedPost.message,
+                id:foundedPost._id
               })
       } else {
         console.log("not found")
